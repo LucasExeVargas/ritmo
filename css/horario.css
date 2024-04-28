@@ -1,0 +1,50 @@
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins' sans-serif; /* Cambiar el tipo de letra a Poppins */
+    font-size: medium; /* Tamaño de letra*/
+}
+
+.container-horarios-templete{
+    width: 1512px; /* Ancho del div */
+    height: 1101px; /* Alto del div */
+}
+
+.container-title-text{
+    background-position: center;
+    width: 100%; /* Ancho del div */
+    max-width: 1180px; /* Ancho máximo del div */
+    height: 199px; /* Alto del div */
+    position: absolute; /* Establecer posición absoluta */
+    top: 64px; /* A 64px del borde superior */
+    left: 166px; /* A 166px del borde izquierdo */
+    right: 166px; /* A 166px del borde derecho */
+    bottom: 838px; /* A 838px del borde inferior */
+    padding: 0; /* Eliminar el relleno */
+    margin: 0; /* Eliminar el margen */
+}
+
+.text-horarios{
+    width: 100%; /* Ancho del div */
+    max-width: 200px; /* Ancho máximo del div */
+    height: 72px; /* Alto del div */
+    position: absolute; /* Establecer posición absoluta */
+    top: 0px; /* A px del borde superior */
+    left: 0px; /* A px del borde izquierdo */
+    right: 0px; /* A px del borde derecho */
+    bottom: 320px; /* A px del borde inferior */
+    padding: 0; /* Eliminar el relleno */
+    margin: 0; /* Eliminar el margen */
+}
+
+.text-reserva{
+    width: 100%; /* Ancho del div */
+    max-width: 1180px; /* Ancho máximo del div */
+    height: 93px; /* Alto del div */
+    position: absolute; /* Establecer posición absoluta */
+    top: 104px; /* A px del borde superior */
+    left: 0px; /* A px del borde izquierdo */
+    right: 0px; /* A px del borde derecho */
+    bottom: 840px; /* A px del borde inferior */
+    padding: 0; /* Eliminar el relleno */
+    margin: 0; /* Eliminar el margen */
+}

@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    font-size: 125%;
+    margin: 0;
+    padding: 0;
+}
+
+section.gallery {
+    background-color: #E5F0D6;
+}
+
+.gallery-title, .gallery-description, .image-container, .image-container-m {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.gallery-container {
+    width: 80%;
+    margin: auto;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.image-container-m {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.image-container img, .image-container-m img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

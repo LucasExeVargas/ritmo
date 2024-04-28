@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Gimnasia Rítmica</title>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // con esta función y jquery cargo otros archivos html, la forma que propongo que trabajemos con distintos archivos cada uno
+        $(function(){$('#header').load('header.html');})
+        $(function(){$('#horario').load('horario.html');});
+        $(function(){$('#gallery').load('gallery.html');});
+        $(function(){$('#footer').load('footer.html');});
+    </script>
+</head>
+<body>
+    <!-- esto lo saco del header.html -->
+    <header>
+        <div id='header'></div>
+    </header>
+    <div id='horario'></div>
+    <div id="gallery"></div>
+    <footer>
+        <div id='footer'></div>
+    </footer>
+</body>
+
+</html>
