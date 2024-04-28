@@ -10,6 +10,7 @@ body {
     width: 100%;
     background-image: url("../img/header.jpg");
     background-size: cover;
+    background-position: center;
     /* Agregamos estas propiedades para hacer la imagen de fondo responsive */
 }
 .header-div {
