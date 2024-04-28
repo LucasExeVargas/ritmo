@@ -1,50 +1,122 @@
-body{
+body {
     background-color: #ffffff;
-    font-family: 'Poppins' sans-serif; /* Cambiar el tipo de letra a Poppins */
-    font-size: medium; /* Tamaño de letra*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.text-poppins-regular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
-.container-horarios-templete{
-    width: 1512px; /* Ancho del div */
-    height: 1101px; /* Alto del div */
+/* Contenedor principal */
+.container-horarios-templete {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-.container-title-text{
+.container-title-text {
     background-position: center;
-    width: 100%; /* Ancho del div */
-    max-width: 1180px; /* Ancho máximo del div */
-    height: 199px; /* Alto del div */
-    position: absolute; /* Establecer posición absoluta */
-    top: 64px; /* A 64px del borde superior */
-    left: 166px; /* A 166px del borde izquierdo */
-    right: 166px; /* A 166px del borde derecho */
-    bottom: 838px; /* A 838px del borde inferior */
-    padding: 0; /* Eliminar el relleno */
-    margin: 0; /* Eliminar el margen */
+    width: 100%;
+    height: auto;
+
+}
+.container-title-text h1,
+.container-title-text h3 {
+    margin: 0;
+    text-align: center;
 }
 
-.text-horarios{
-    width: 100%; /* Ancho del div */
-    max-width: 200px; /* Ancho máximo del div */
-    height: 72px; /* Alto del div */
-    position: absolute; /* Establecer posición absoluta */
-    top: 0px; /* A px del borde superior */
-    left: 0px; /* A px del borde izquierdo */
-    right: 0px; /* A px del borde derecho */
-    bottom: 320px; /* A px del borde inferior */
-    padding: 0; /* Eliminar el relleno */
-    margin: 0; /* Eliminar el margen */
+/* Contenedor de las tarjetas */
+.container-cards {
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.text-reserva{
-    width: 100%; /* Ancho del div */
-    max-width: 1180px; /* Ancho máximo del div */
-    height: 93px; /* Alto del div */
-    position: absolute; /* Establecer posición absoluta */
-    top: 104px; /* A px del borde superior */
-    left: 0px; /* A px del borde izquierdo */
-    right: 0px; /* A px del borde derecho */
-    bottom: 840px; /* A px del borde inferior */
-    padding: 0; /* Eliminar el relleno */
-    margin: 0; /* Eliminar el margen */
+/* Estilos para las tarjetas */
+.container-card1,
+.container-card2 {
+    width: calc(50% - 20px);
+    max-width: 500px;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black; /* Agregar borde negro */
+    border-radius: 1rem;
+    transition: transform 0.3s ease; /* Transición para la animación */
+    overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.container-card1 img,
+.container-card2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
+    transition: transform 0.3s ease; /* Transición para la animación */
+}
+
+/* Animación al pasar el mouse sobre las tarjetas */
+.container-card1:hover,
+.container-card2:hover {
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el mouse */
+}
+
+/* Estilos para el texto dentro de las tarjetas */
+.container-text1-card p,
+.container-text2-card p,
+.container-text3-card p,
+.container-text4-card p {
+    text-align: center;
+}
+
+ /* Estilos para el botón */
+.container-buttom {
+    background-color: #60D669;
+    width: 40%; /* Utilizando porcentaje para el ancho */
+    margin: 20px auto ;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centrar el texto */
+    transition: 0.3s ease;
+    border-radius: 1rem;
+    padding-inline: 5%; /* Añadiendo padding interno */
+}
+.container-buttom:hover {
+    background-color: #60D669;
+    transform: scale(1.1); /* Animación de escala al pasar el mouse */
+}
+.container-buttom img {
+    width: 20%; /* Utilizando porcentaje para el tamaño de la imagen */
+    max-width: 40px; /* Limitando el tamaño máximo */
+    margin-right: 10px;
+    object-fit: contain;
+}
+.container-buttom-txt p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1rem; /* Tamaño del texto en unidades relativas */
+}
+.white{
+    color: #ffffff;
+}
+
+/* Regla de medios para dispositivos pequeños */
+@media only screen and (max-width: 768px) {
+    .container-card1,
+    .container-card2 {
+        width: calc(100% - 20px); /* Utilizamos unidades relativas y ajustamos el espacio entre las tarjetas */
+        margin-bottom: 20px;
+    }
 }

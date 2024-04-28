@@ -3,7 +3,6 @@ body{
     margin: 0;
 }
 .footer_bg{
-    padding-top: 5%;
     width: 100%;
     background-color: #E5F0D6;
     display: flex;
@@ -13,7 +12,7 @@ body{
 }
 .ico{
     margin: 10px; /* Ajusta el margen para separar las imágenes */
-    width: 50%;
+    width: 5rem;
     transition: 0.3s ease;
 }
 .ico:hover{
@@ -26,9 +25,27 @@ body{
 }
 .footer-img{
     float: left;
-    padding-right: 5px;
+    padding-right: 1rem;
     transition: 0.3s ease;
 }
 .footer-img:hover{
     transform: scale(1.1);
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 480px) {
+    p{
+        text-align: center;
+    }
+    a{
+        display: flex;
+    }
+    .footer-img{
+        padding-left: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

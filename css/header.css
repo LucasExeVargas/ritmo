@@ -1,53 +1,48 @@
+/* para  que el scroll a las secciones sea bonito*/
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
-
 .header-bg {
     width: 100%;
     background-image: url("../img/header.jpg");
     background-size: cover;
-    background-position: center;
     /* Agregamos estas propiedades para hacer la imagen de fondo responsive */
 }
-
 .header-div {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     text-align: center;
     padding: 20px;
     /* Modificamos para que ocupe el 100% del ancho del viewport */
 }
-
 .header-sign {
     width: 80%;
     max-width: 600px; /* Limitamos el ancho máximo para que no se vea excesivamente grande en pantallas muy grandes */
     margin: 0 auto; /* Centramos el contenido */
 }
-
 .header-img {
     width: 80%; /* Reducimos el tamaño de la imagen */
     max-width: 300px; /* Limitamos el ancho máximo para que no se vea excesivamente grande en pantallas muy grandes */
-    margin: 0 auto; /* Centramos la imagen */
+    margin: 5rem auto 5rem; /* Centramos la imagen */
 }
-
 .header-text {
     font-size: 2.5rem;
     margin: 20px 0; /* Añadimos un espacio en la parte superior e inferior */
 }
-
 .shadowed {
     text-shadow: 1px 1px 2px black;
 }
-
 .nav-container {
     display: flex;
     justify-content: center;
     background-color: rgba(109, 140, 199, 0.65);
     padding: 10px 0; /* Añadimos un espacio alrededor del contenedor */
 }
-
 .nav-button {
     text-decoration: none;
     font-size: 1.5rem; /* Reducimos el tamaño del texto */
@@ -56,7 +51,6 @@ body {
     color: black;
     transition: 0.3s ease;
 }
-
 .nav-button:hover {
     color: white;
 }
@@ -68,17 +62,34 @@ body {
     font-style: normal;
 }
 
-/* Hacemos que el texto sea responsive */
+/* media queries */
 @media screen and (max-width: 768px) {
+    /* Hacemos que el texto sea responsive */
+    /* Reducimos el tamaño del texto en dispositivos más pequeños */
     .header-text {
-        font-size: 2rem; /* Reducimos el tamaño del texto en dispositivos más pequeños */
+        font-size: 2rem;
     }
-}
-
-/* Hacemos que los botones del menú de navegación se apilen verticalmente en dispositivos más pequeños */
-@media screen and (max-width: 768px) {
+    /* Hacemos que los botones del menú de navegación se apilen verticalmente en dispositivos más pequeños */
     .nav-container {
         flex-direction: column;
         align-items: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    /* cambio orientación del grid */
+    .header-div{
+        grid-template-columns: 1fr;
+    }
+    /* para que se vea más la imagen del header */
+    .header-bg{
+        background-position: center;
+    }
+    /* remuevo margen en pantallas pequeñas */
+    .header-img{
+        margin: 0 auto;
+    }
+    /* bajo tamaño de texto en pantallas pequeñas */
+    .header-text{
+        font-size: 1.5rem;
     }
 }
