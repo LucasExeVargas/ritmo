@@ -78,7 +78,7 @@ body {
  /* Estilos para el botón */
 .container-buttom {
     background-color: #60D669;
-    width: 40%; /* Utilizando porcentaje para el ancho */
+    width: 20%; /* Utilizando porcentaje para el ancho */
     margin: 2% auto ;
     margin-bottom: 2%;
     display: flex;
@@ -94,7 +94,7 @@ body {
     transform: scale(1.1); /* Animación de escala al pasar el mouse */
 }
 .container-buttom img {
-    width: 20%; /* Utilizando porcentaje para el tamaño de la imagen */
+    width: 10%; /* Utilizando porcentaje para el tamaño de la imagen */
     max-width: 40px; /* Limitando el tamaño máximo */
     margin-right: 10px;
     object-fit: contain;
@@ -103,6 +103,7 @@ body {
     margin: 0;
     color: #ffffff;
     font-size: 1rem; /* Tamaño del texto en unidades relativas */
+    text-decoration: none; /* Quital el subrayado del texto */
 }
 .white{
     color: #ffffff;
