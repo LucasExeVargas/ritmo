@@ -88,6 +88,7 @@ body {
     transition: 0.3s ease;
     border-radius: 1rem;
     padding-inline: 5%; /* Añadiendo padding interno */
+    text-decoration: none; /* Quital el subrayado del texto */
 }
 .container-buttom:hover {
     background-color: #60D669;
@@ -98,6 +99,7 @@ body {
     max-width: 40px; /* Limitando el tamaño máximo */
     margin-right: 10px;
     object-fit: contain;
+    
 }
 .container-buttom-txt p {
     margin: 0;
