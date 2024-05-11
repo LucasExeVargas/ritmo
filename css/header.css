@@ -70,11 +70,6 @@ body {
     .header-text {
         font-size: 2rem;
     }
-    /* Hacemos que los botones del menú de navegación se apilen verticalmente en dispositivos más pequeños */
-    .nav-container {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 @media screen and (max-width: 480px) {
     /* cambio orientación del grid */
