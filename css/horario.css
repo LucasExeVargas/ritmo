@@ -78,7 +78,7 @@ body {
  /* Estilos para el botón */
 .container-buttom {
     background-color: #60D669;
-    width: 20%; /* Utilizando porcentaje para el ancho */
+    width: 10%; /* Utilizando porcentaje para el ancho */
     margin: 2% auto ;
     margin-bottom: 2%;
     display: flex;
@@ -94,7 +94,7 @@ body {
     transform: scale(1.1); /* Animación de escala al pasar el mouse */
 }
 .container-buttom img {
-    width: 10%; /* Utilizando porcentaje para el tamaño de la imagen */
+    width: 40%; /* Utilizando porcentaje para el tamaño de la imagen */
     max-width: 40px; /* Limitando el tamaño máximo */
     margin-right: 10px;
     object-fit: contain;
@@ -120,6 +120,9 @@ body {
         width: calc(100% - 20px); /* Utilizamos unidades relativas y ajustamos el espacio entre las tarjetas */
         margin-bottom: 20px;
         max-width: 33%;
+    }
+    .container-buttom {
+        width: 45%; /* Utilizando porcentaje para el ancho */
     }
 }
 @media only screen and (max-width: 480px) {
